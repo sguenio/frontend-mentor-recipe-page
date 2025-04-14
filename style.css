@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone100: hsl(30, 54%, 90%);
+  --Stone150: hsl(30, 18%, 87%);
+  --Stone600: hsl(30, 10%, 34%);
+  --Stone900: hsl(24, 5%, 18%);
+  --Brown800: hsl(14, 45%, 36%);
+  --Rose800: hsl(332, 51%, 32%);
+  --Rose50: hsl(330, 100%, 98%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: var(--Stone100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-family: "Outfit";
+  color: var(--Stone600);
+}
+
+main {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 725px;
+  margin: 5rem 0;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-family: "Young Serif";
+  color: var(--Brown800);
+  font-weight: 300;
+}
+
+.recipe {
+  padding: 3rem 3rem 1rem 3rem;
+}
+
+h1 {
+  font-family: "Young Serif";
+  color: var(--Stone900);
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+.introduction-text {
+  font-size: 16px;
+}
+
+.preparation-time {
+  border-radius: 10px;
+  background-color: var(--Rose50);
+  padding: 0.8rem;
+  margin: 2.2rem 0px;
+}
+
+h3 {
+  color: var(--Rose800);
+  margin-left: 1rem;
+  font-weight: 600;
+  margin: 15px 15px 10px 15px;
+}
+
+.preparation-time ul li {
+  margin-bottom: 0.8rem;
+  margin-left: -5px;
+  padding-left: 17px;
+}
+
+.preparation-time ul li::marker {
+  color: var(--Rose800);
+  font-size: 13px;
+}
+
+li {
+  margin-bottom: 0.8rem;
+}
+
+.ingredients ul li {
+  margin-left: -19px;
+  padding-left: 17px;
+}
+
+.instructions ol li {
+  margin-bottom: 0.8rem;
+  margin-left: -18px;
+  padding-left: 17px;
+}
+.ingredients ul li::marker {
+  color: var(--Brown800);
+  font-size: 13px;
+}
+
+hr {
+  border: none;
+  height: 0.5px;
+  background-color: var(--Stone150);
+  margin: 30px 0;
+}
+
+.instructions ol li::marker {
+  color: var(--Brown800);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0;
+}
+
+.nutrition-table td {
+  font-size: 17px;
+  padding: 13px 0;
+}
+
+.nutrition-table td:first-child {
+  padding-left: 2rem; 
+}
+
+.nutrition-table td:last-child {
+  padding-left: 3.5rem;
+}
+
+.nutrition-table tr + tr {
+  border-top: 0.5px solid var(--Stone150);
+}
+
+.nutrition-value {
+  color: var(--Brown800);
+  font-weight: 700;
+}
